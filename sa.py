@@ -26,6 +26,6 @@ if page.status_code==200:
   movie_cho = choice(s)
   print(movie_cho.get_text())
 
-elif page ==404:
+elif page.status_code ==404:
   print('[+] page not found')
 
